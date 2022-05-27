@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no>
+  <title>atlier HARUKA -ALLinOnePLAN-</title>
+  <meta name="description" content="卒業式スタイルを簡潔に提供する袴レンタルプラン">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="images/favicon.png">
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+<!-- css -->
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/reservation.css">
+
+</head>
+<body>
+
+  <main>
+  <header>
+   <div class="header-container">
+      <h1 class="header-logo">
+          <img class="logo" 
+          src="images/logo_01.png" 
+          alt="atlier HARUKAのロゴ"
+          width="330"@
+          height="150"></h1>
+      </div>
+  </header>
+
+
+  <section class="reservation">
+    <div class="reservation-inner">
+      <h6 class="reservation-hdg">サロンのご予約<span>Salon's reservation</s></span></h5>
+
+      <form action="reservation-form">
+        <table class="reservation-table">
+          <tr class="reservation-list">
+            <th class="reservation-list-label" >お名前 (<span class="reservation-list-label-span">※</span>)</th>
+            <td class="reservation-list-item">
+              <input type="text" name="name" class="reservation-form-input" >
+            </td>
+          </tr>
+          <tr class="reservation-list">
+            <th class="reservation-list-label">ふりがな (<span class="reservation-list-label-span">※</span>)</th>
+            <td class="reservation-list-item"> 
+              <input type="text" name="kana" class="reservation-form-input" ></td>
+          </tr>
+          <tr class="reservation-list">
+            <th class="reservation-list-label">メール (<span class="reservation-list-label-span">※</span>)</th>
+            <td class="reservation-list-item"> <input type="email" name="mail" class="reservation-form-input" ></td>
+          </tr>
+          <tr class="reservation-list">
+            <th class="reservation-list-label">電話番号 (<span class="reservation-list-label-span">※</span>)</th>
+            <td class="reservation-list-item"><input type="tel" name="tel" class="form-tel" autocomplete="tel" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" maxlength="13" > <p>( 半角・ハイフンあり | 例 : 090-1234-5678 )</p></td>
+          </tr>
+          <tr class="reservation-list">
+            <th class="reservation-list-label">ご来店店舗 (<span class="reservation-list-label-span">※</span>)</th>
+            <td class="reservation-list-item">
+              <select name="example2" class="reservation-form-select">
+                <option value="">店舗名を表示</option>
+              <option value="ルミネ新宿店">ルミネ新宿店</option>  
+              <option value="新宿京王モール店">新宿京王モール店  </option>  
+              <option value="渋谷マークシティ店">渋谷マークシティ店</option>  
+              <option value="渋谷ヒカリエ店">渋谷ヒカリエ店</option>  
+              <option value="Echika池袋店">Echika池袋店</option>  
+              <option value="Esosla池袋店">Esosla池袋店</option>  
+              <option value="ルミネ池袋店">ルミネ池袋店</option>  
+              <option value="Echika表参道店">Echika表参道店</option>  
+              <option value="ラ・ポルト青山店">ラ・ポルト青山店</option>  
+              <option value="東京八重洲店">東京八重洲店</option>  
+              <option value="高島屋日本橋店">高島屋日本橋店</option>  
+              <option value="ルミネ有楽町店">ルミネ有楽町店</option>  
+              <option value="六本木ヒルズ店">六本木ヒルズ店</option>  
+              <option value="アトレ恵比寿店">アトレ恵比寿店</option>  
+              <option value="アトレ四谷店">アトレ四谷店</option>  
+              <option value="ルミネ北千住店">ルミネ北千住店</option>  
+              <option value="ビーンズ赤羽店">ビーンズ赤羽店</option>  
+              <option value="アトレ吉祥寺店">アトレ吉祥寺店</option>  
+              <option value="ルミネ立川店">ルミネ立川店</option>  
+              <option value="町田モディ店">町田モディ店</option>  
+             </select>
+            </td>
+          </tr>
+          <tr class="reservation-list">
+            <th class="reservation-list-label">ご来店日時 (<span class="reservation-list-label-span">※</span>)</th>
+            <td class="reservation-list-item"> 
+          <!-- <label for="time"> -->
+         <input type="datetime-local" id="time" name="datetime" class="reservation-form-input"
+              min="2022-05-01T10:00" max="2023-4-30T18:00" step="3600"> 
+            </label> <p>( 営業時間 | 10:00 ~ 20:00 )</p></td>
+          </tr>  
+        </table>
+      </form>
+      <div class="btn-area2">
+        <a class="btn-inner2" target="_blank"><span>送信</span></a>
+      </div>
+  </section>
+      
+
+
+
+  <footer>
+    <div class="footer-container">
+    <div class="footer-office">
+      <h1 class="footer-logo"><img class="logo" 
+        src="images/logo_01.png" 
+        alt="atlier HARUKAのロゴ"
+        width= "330"
+        height= "150"></h1>
+    <p class="footer-office-overview"><span>メイクアップ・ヘアセット・ネイル・まつげのトータルビューティーサロン</span><br>ウエディングやパーティー、ちょっとしたお出かけやデートの前に。プロのヘアメイクで、いつもよりもっと魅力的に変身しませんか？<br>お客様のご要望をお伺いしながら、新しいスタイルをご提案いたします。
+    </p>
+  </div>
+    <p class="footer-copyright">© atelier haruka co.,ltd. All rights reserved.</p>
+  </div>
+  </footer>
+  </body>
+  
+  </html>
